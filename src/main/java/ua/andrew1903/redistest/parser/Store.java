@@ -1,6 +1,6 @@
 package ua.andrew1903.redistest.parser;
 
-public enum Site {
+public enum Store {
     EBAY,
-    ;
+
 }

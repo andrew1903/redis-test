@@ -7,9 +7,9 @@ import org.springframework.data.redis.core.RedisHash;
 import java.io.Serializable;
 
 @Data
-@RedisHash("Product")
 @AllArgsConstructor
-public class Product implements Serializable {
+@RedisHash(value = "Product", timeToLive = 200L)
+public class Product<T> implements Serializable {
     private Long id;
-    private double price;
+    private T value;
 }
